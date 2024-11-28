@@ -325,7 +325,7 @@ const adicionarResiduo = () => {
 const process = () => {
   locais.forEach((local, i) => {
     local.onmouseenter = () => {
-      if (deleteEle) {
+      if (deleteEle && !processing[i]) {
         if (i != 4) {
           if (
             residuos[deleteRes] >= processingList[i][0] &&
@@ -354,11 +354,12 @@ const process = () => {
         }
 
         deleteEle.remove();
-        deleteEle = null;
         residuos[deleteRes] = null;
-        deleteRes = null;
         selector(null);
       }
+
+      deleteEle = null;
+      deleteRes = null;
     };
   });
 };
