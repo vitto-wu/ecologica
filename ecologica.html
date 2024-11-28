@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecologica</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  </head>
+  <body>
+    <div class="mapWraper overlay">
+      <div class="map">
+        <img src="./img/map.jpg" alt="Mapa" />
+      </div>
+      <div class="locais aterroSanitario">
+        <img src="./img/locais/aterroSanitario.png" alt="aterroSanitario" />
+        <svg class="timer-circle indicator" width="32" height="32">
+          <circle class="circle-bg" cx="16" cy="16" r="7"></circle>
+          <circle class="circle-progress" cx="16" cy="16" r="7"></circle>
+        </svg>
+      </div>
+      <div class="locais ecoponto">
+        <img src="./img/locais/ecoponto.png" alt="ecoponto" />
+        <svg class="timer-circle indicator" width="32" height="32">
+          <circle class="circle-bg" cx="16" cy="16" r="7"></circle>
+          <circle class="circle-progress" cx="16" cy="16" r="7"></circle>
+        </svg>
+      </div>
+      <div class="locais centroReciclagem">
+        <img src="./img/locais/centroReciclagem.png" alt="centroReciclagem" />
+        <svg class="timer-circle left" width="32" height="32">
+          <circle class="circle-bg" cx="16" cy="16" r="7"></circle>
+          <circle class="circle-progress" cx="16" cy="16" r="7"></circle>
+        </svg>
+      </div>
+      <div class="locais incinerador">
+        <img src="./img/locais/incinerador.png" alt="incinerador" />
+        <svg class="timer-circle indicator" width="32" height="32">
+          <circle class="circle-bg" cx="16" cy="16" r="7"></circle>
+          <circle class="circle-progress" cx="16" cy="16" r="7"></circle>
+        </svg>
+      </div>
+      <div class="locais lixao">
+        <img src="./img/locais/lixao.png" alt="Lixão" />
+        <h3 class="lixaoCounter indicator">0</h3>
+      </div>
+    </div>
+    <div class="mascote">
+      <img src="./img/mascote/hello.png" alt="Mascote Oi" />
+      <img src="./img/mascote/tip.png" alt="Mascote Dica" />
+      <img src="./img/mascote/warning.png" alt="Mascote Cuidado" />
+      <div class="fala" id="fala">
+        <h3>
+          Olá! Eu sou o EcoBot, seu assistente no desafio de cuidar do meio
+          ambiente. Juntos, iremos aprender a descartar corretamente os resíduos
+          produzidos pela população, contribuindo para um planeta mais limpo e
+          sustentável. Estou aqui para guiá-lo em cada passo dessa missão tão
+          importante. Pronto para começar?
+        </h3>
+      </div>
+    </div>
+    <div class="clockInfo">
+      <div class="clockLabel">
+        <svg class="timer-circle" width="32" height="32">
+          <circle class="circle-bg" cx="16" cy="16" r="7"></circle>
+          <circle class="green" cx="16" cy="16" r="7"></circle>
+        </svg>
+        <h3>10s</h3>
+      </div>
+      <div class="clockLabel">
+        <svg class="timer-circle" width="32" height="32">
+          <circle class="circle-bg" cx="16" cy="16" r="7"></circle>
+          <circle class="red" cx="16" cy="16" r="7"></circle>
+        </svg>
+        <h3>20s</h3>
+      </div>
+    </div>
+    <div class="level">
+      <div class="levelBar">
+        <div class="levelProgress paused"></div>
+      </div>
+      <div class="levelLabel">
+        <h3>1</h3>
+        <h3>•</h3>
+        <h3>•</h3>
+        <h3>2</h3>
+        <h3>•</h3>
+        <h3>•</h3>
+        <h3>3</h3>
+        <h3>•</h3>
+        <h3>•</h3>
+        <h3>4</h3>
+        <h3>•</h3>
+        <h3>•</h3>
+        <h3>5</h3>
+        <h3>•</h3>
+        <h3>•</h3>
+      </div>
+    </div>
+    <div class="painelResiduoWrapper">
+      <div class="painelResiduo">
+        <div class="regua paused"></div>
+      </div>
+    </div>
+    <div class="painelPenalidades">
+      <div class="penalidades poluicao">
+        <img src="./img/poluicao.svg" alt="Icone de Poluição" />
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+      </div>
+      <div class="penalidades contaminacao">
+        <img src="./img/contaminacao.svg" alt="Icone de Contaminação" />
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
